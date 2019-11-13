@@ -1,0 +1,43 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+double T,Tmin,TRed;
+int costS,costSaux;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*void writeFile(myfile){
+	myfile.open("teste.txt","w");
+	myfile << "Initial temperature  \n";
+//	fprintf(myfile,"Final temperature  \n",Tmin);
+//	fprintf(myfile,"Factor of temperature reduction \n",TRed);
+	myfile.close();
+}*/
+
+/*T=4; // temperatura inicial
+Tmin=0.02;
+TRed=0.001; // fator de redução da temperatura
+constroiSolIn(S,costS); // configuração inicial
+
+while (T>Tmin) {
+	improveSol(Saux,costSaux);
+	if random < exp((costS-costSaux)/T){
+		S=Saux;
+	}
+	T:=T*TRed;
+}*/
+
+int main () {
+  ofstream myfile;
+	std::cout << "Enter the initial temperature: ";
+	std::cin >> T;
+	std::cout << "Enter the final temperature: ";
+	std::cin >> Tmin;
+	std::cout << "Enter the factor of temperature reduction: ";
+	std::cin >> TRed;
+  myfile.open ("example.txt");
+  myfile << "Writing this to a file.\n";
+  myfile.close();
+  return 0;
+}
