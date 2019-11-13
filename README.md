@@ -1,2 +1,2 @@
 # Optimization
-Algorithms for some NP-Hard problems
+Algorithms for some classical problems
